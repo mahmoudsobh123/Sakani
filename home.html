@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8"/>
+   <title>task2</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+</head>
+<body>
+<header class="row m-0 d-flex">
+    <div class="header-content py-2 mt-3">
+      <img src="images/logo.jpg" href="#" class="image col-md-1 col-sm-2 col-2" id="img-home">
+    <div class="log-reg" style="margin-left: -20px;">
+        <a href="login.html" class="Online" style="margin: -5px 0 0 30px;">Login</a>
+        <a href="regisster.html" class="Online ms-4">Register</a>
+    </div>
+    <ul id="user-info">
+      <div class="wel-par d-flex col-lg-4 col-md-4">
+        <h2 class="wel" style="margin-right: 5px !important;">Welcome</h2>
+        <li><a href="#" id="user"></a></li>
+      </div>
+        <li class="Shooping-cart col-md-4 col-sm-4" style="margin-top: 7px;">
+        <i class="fas fa-shopping-cart cart" style=" color: #f8ebcf;"></i>
+          <div class="badge" style=" color: #f8ebcf;">
+          <span class="bad"></span>
+          </div>
+          <div class="carr">
+            <h2 class="cartt" style=" color: #f8ebcf;">cart</h2>
+            <i class="fas fa-caret-up fa-rotate-180" id="tria"></i>
+          </div>
+          <div class="carts-products">
+            <div></div>
+            <a href="cartProducts.html">View All Products</a>
+          </div>
+          <li><a href="index.html" class="log-home" style="margin-left: 80px !important;" id="logout">Log Out</a></li>
+        </li>
+      </ul>
+   </div>
+</header> 
+ <!--//////////////  -->
+ <div class="wel-paar d-flex mx-2 col-sm-5">
+   <h2 class="wel " style="margin-right: 5px !important; color: #000;">Welcome</h2>
+   <li><a href="#" class="usere"></a></li>
+ </div>
+<!-- //////////////////////////////////////////////////////// -->
+<section>
+<div class="container mt-md-5">
+  <div class="par row m-0">
+    <input type="text" class="col-lg-8 col-md-9 col-sm-12" id="Search" placeholder="  Search">
+  </div>
+  <div class="bar2 row m-0">
+   <button  onclick="getSearchMood(this.id)" id="searchTitle" class="col-lg-5 col-md-3 col-sm-12"> Search By title </button> 
+   <button  onclick="getSearchMood(this.id)" id="searcategory" class="col-lg-5 col-md-3 col-sm-12"> Search By Person </button> 
+  </div>
+  <div class="proo mt-5" style="margin-bottom: -15px;">
+  <h2 class="pro text-center">Products</h2>
+  <div class="mas"></div>
+  </div>
+  <div class="Products row d-flex justify-content-around">
+    <div class="child1 col-lg-3 col-sm-5 col-12">
+      <img src="images/thin2.jpeg" class="cart-img">
+      <h2 class="cart-title1">product : T-shirt adidas</h2>
+      <h2 class="cart-title2">Price : 80 </h2>
+      <span class = "dol" style="margin-top: -40px;"> EGP </span>
+      <h2 class="cart-title3">Person : Fashion</h2>
+      <div class="product-item-action">
+        <button class="btn btn-primary add-to-cart">Add To Cart</button>
+        <i class="far fa-heart fav${item.id}" id = "fav"></i>
+        <i class="fas fa-heart fav2${item.id}" id = "fav2" style="color: #ff0000;" ></i>
+      </div>
+    </div>
+   </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
